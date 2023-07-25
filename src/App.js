@@ -1,3 +1,5 @@
+import CardItem from './components/CardItem'
+
 import './App.css'
 
 const cardsList = [
@@ -35,6 +37,20 @@ const cardsList = [
   },
 ]
 
-const App = () => <h1>Replace this element with your code</h1>
+const App = () => (
+  <div className="bg-container">
+    <h1 className="heading">Learn 4.0 Technologies</h1>
+    <p className="description">
+      Get trained by alumni of IITs and top companies like Amazon, Microsoft,
+      Intel,Nvidia,Qualcomm,etc. Learn directly from professionals involved in
+      Product Development
+    </p>
+    <ul className="cards-container">
+      {cardsList.map(each => (
+        <CardItem cardsList={each} key={each.id} />
+      ))}
+    </ul>
+  </div>
+)
 
 export default App

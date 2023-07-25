@@ -15,3 +15,26 @@
 }
 
 /* Write CSS code here. */
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  max-width: 400px;
+  margin: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.titles {
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: #171f46;
+}
+.descriptions {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #64748b;
+}
+.image {
+  align-self: flex-end;
+}
